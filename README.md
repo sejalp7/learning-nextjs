@@ -1,0 +1,21 @@
+- NextJS is used to the expand the use of react to the static sites e.g. Blogs, Wiki Pages, etc
+- create a nextjs project using the command npx create-next-app@latest app_name
+- File Based Routing 
+    - page.tsx defines a route the user can visit
+    - name of the folder contrils the route
+    - folders can be deeply nested
+    - must have export default of the react component
+- Run the project using the command npm run dev
+- To add naviigation between pages use the Link tag 
+    - import Link from 'next/link'
+- Layout.tsx is a global parent component, it acts like the entry point for the UI rendering. Common UI logic like a header or navigation bar can sit in the Layout.tsx file.
+- Project structure startegy - in order to avoid create a lot of code in one file we can move the code to resuable components and use them as and when needed.
+- Create all the routing files i.e. page.tsx files inside the app folder and the reusable components, data or utilities outside the app folder to maintain code managebility and readability.
+- To handle the problem of deeply nested imports, next provides the '@' which when added to an import points to the src folder.
+- Image component in Next, allows us to render images on local and hosted environment that can adapt to different window sizes.
+- The resizes of the images happens only once on the server and then it gets cached, make it efficient.
+   - import Image from 'next/image';
+   - Image helps to handle the layout shifting issue.
+   - image fill prop fits the image depending on device as much as possible.
+- Vercel provides the deployment environment, the app is up and running on this link
+    https://learning-nextjs-ic5ghm5w1-sejal-pandes-projects.vercel.app/
